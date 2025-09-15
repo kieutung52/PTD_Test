@@ -1,0 +1,18 @@
+Bài 1 — Tương tự ví dụ (abstract + đóng gói)
+
+Mô tả: Xây dựng lớp Gun dùng các loại đạn kế thừa từ một abstract class BulletBase. Gun giữ số đạn (encapsulated), có thể thay đổi loại đạn và bắn.
+Yêu cầu:
+BulletBase (abstract) có trường material và phương thức abstract fly().
+Tạo BulletNormal và BulletArmorPiercing kế thừa BulletBase.
+Gun có trường private bullet (BulletBase) và private int ammo; có phương thức changeBullet(BulletBase), reload(int), shoot() — shoot giảm ammo nếu >0 và gọi bullet.fly().
+Viết main để thử thay đổi loại đạn, reload và shoot.
+
+
+Bài 2 — Dùng interface + đóng gói
+
+Mô tả: Xây dựng Car sử dụng một Engine interface. Car đóng gói speed và fuelLevel, có thể thay đổi engine tại runtime (polymorphism qua interface).
+Yêu cầu:
+Engine (interface) khai báo run().
+DieselEngine và ElectricEngine implement Engine với hành vi khác nhau.
+Car có private Engine engine, private int speed, private double fuelLevel; phương thức setEngine(Engine), accelerate(), brake(), refuel(double).
+Viết main để test chuyển đổi engine, tăng tốc giảm tốc, quan sát fuelLevel.
