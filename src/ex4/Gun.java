@@ -14,7 +14,7 @@ public class Gun {
         this.bullet = bullet;
         System.out.println("da thay doi dan: " + bullet.getClass().getSimpleName());
     }
-  public void reload(int ammo) {
+    public void reload(int ammo) {
         this.ammo = ammo;
         System.out.println("Da nap " + ammo + " vien dan.");
     }
